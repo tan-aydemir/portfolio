@@ -380,14 +380,14 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/dormquery-agent/tree/main', '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">💻</span>
+                        <span className="text-3xl mr-3"></span>
                         <h3 className="text-xl font-bold text-gray-800">DormQuery Agent</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
                       A smart building analytics tool that combines graph modeling, time-series sensor simulation, and LLM-powered natural 
                       language querying to deliver intuitive insights into room conditions, AC unit coverage, and occupancy trends
                       </p>
-                      <div className="flex items-center text-blue-600 group-hover:text-blue-800 transition-colors duration-300">
+                      <div className="flex items-center text-blsue-600 group-hover:text-blue-800 transition-colors duration-300">
                         <span className="text-sm font-semibold">View on GitHub →</span>
                       </div>
                     </div>
@@ -398,7 +398,7 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/Latent-Semantic-Analysis-Search-Engine-WebPage' , '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">📊</span>
+                        <span className="text-3xl mr-3"></span>
                         <h3 className="text-xl font-bold text-gray-800">LSA Search Engine</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
@@ -416,7 +416,7 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/quantitative-finance/tree/main/backtesting-interest-driven-trading-strategy', '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">🎯</span>
+                        <span className="text-3xl mr-3"></span>
                         <h3 className="text-xl font-bold text-gray-800">MacroRateTrading</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
@@ -434,7 +434,7 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/quantitative-finance/tree/main/black-scholes-merton-option-pricing', '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">⚡</span>
+                        <span className="text-3xl mr-3"></span>
                         <h3 className="text-xl font-bold text-gray-800">Black-Scholes-Merton Option Pricing Model</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
@@ -452,7 +452,7 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/CS506-Final-Project_Resume_Evaluation_Agent', '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">⚡</span>
+                        <span className="text-3xl mr-3"></span>
                         <h3 className="text-xl font-bold text-gray-800">Resume Evaluation Agent</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
@@ -470,7 +470,6 @@ const PersonalWebsite = () => {
                       onClick={() => window.open('https://github.com/tan-aydemir/Hypothesis-Testing-and-Confidence-Intervals-in-Linear-Regression', '_blank')}
                     >
                       <div className="flex items-center mb-4">
-                        <span className="text-3xl mr-3">⚡</span>
                         <h3 className="text-xl font-bold text-gray-800">Regression Inference Simulator</h3>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-4">
