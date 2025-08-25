@@ -35,7 +35,7 @@ const PersonalWebsite = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hoveredPhoto, setHoveredPhoto] = useState(null);
   
-  // NEW: lightbox state
+  //lightbox state
   const [lightboxPhoto, setLightboxPhoto] = useState(null);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const PersonalWebsite = () => {
 
   const goTo = (page) => {
     setCurrentPage(page);
-    // Smooth scroll to top of the page content
+    // scroll to top of the page content
     window.requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -89,7 +89,7 @@ const PersonalWebsite = () => {
               {/* Hero Section */}
               <div className="mb-16">
                 
-                {/* Name - Centered in viewport */}
+                {/* Name */}
                 <h1 className="text-7xl lg:text-7xl font-bold bg-gradient-to-r from-blue-900 to-blue-900 bg-clip-text text-opaque mb-20 text-center">
                   Tan Aydemir
                 </h1>
@@ -129,7 +129,7 @@ const PersonalWebsite = () => {
                 </div>
               </div>
 
-              {/* About Me Section */}
+              {/* About Me */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 mt-16">
                 <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">About Me</h2>
                 <p className="text-gray-600 text-lg leading-relaxed text-center max-w-4xl mx-auto">
@@ -139,7 +139,7 @@ const PersonalWebsite = () => {
                   a real impact. I enjoy seeing ideas through, from the first sketch to something people can use.
                 </p>
                 
-                {/* Skills/Interests Grid */}
+                {/* Skills/Interests */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -147,9 +147,8 @@ const PersonalWebsite = () => {
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Software</h3>
 
-                    {/* Wrapper for overlay hover effect */}
+                    {/* Overlay effect */}
                     <div className="relative rounded-xl overflow-hidden border border-black-700 cursor-pointer">
-                      {/* Default visible text */}
                       <p className="text-gray-600 p-4">Building tools that work</p>
 
                       {/* Overlay appears on hover */}
@@ -162,14 +161,14 @@ const PersonalWebsite = () => {
                     </div>
                   </div>
                   
-                  {/* Data  */}
+                  {/* Data */}
                   <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-white text-2xl">📊</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Data</h3>
 
-                    {/* Wrapper for overlay hover effect */}
+                    {/* Overlay */}
                     <div className="relative rounded-xl overflow-hidden border border-black-700 cursor-pointer">
                       {/* Default visible text */}
                       <p className="text-gray-600 p-4">Using data to uncover insights</p>
@@ -206,7 +205,6 @@ const PersonalWebsite = () => {
                 </div>
               </div>
 
-              {/* Education Highlight */}
             </div>
           </div>
         );
@@ -229,7 +227,6 @@ const PersonalWebsite = () => {
                     {/* Intel */}
                     <div className="p-6 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow">
                     <div className="flex items-center gap-6">
-                      {/* Bigger logo box (still contained) */}
                       <div className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-2xl bg-white border border-blue-100 overflow-hidden grid place-items-center p-2">
                         <img
                           src={intelSymbol}
@@ -256,7 +253,6 @@ const PersonalWebsite = () => {
                     {/* DFDS */}
                     <div className="p-6 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow">
                         <div className="flex items-center gap-6">
-                        {/* Bigger logo box (contained) */}
                         <div className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-2xl bg-white border border-blue-100 overflow-hidden grid place-items-center p-2">
                           <img
                             src={dfdsSymbol}
@@ -281,7 +277,6 @@ const PersonalWebsite = () => {
                     {/* CREAVIT */}
                     <div className="p-6 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow">
                       <div className="flex items-center gap-6">
-                        {/* Bigger logo box (contained) */}
                         <div className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-2xl bg-white border border-blue-100 overflow-hidden grid place-items-center p-2">
                           <img
                             src={creavitSymbol}
@@ -325,7 +320,7 @@ const PersonalWebsite = () => {
                     {/* Main education card */}
                     <div className="p-6 rounded-2xl border border-blue-50 bg-gradient-to-br from-blue-50 to-gray-50 hover:shadow-lg transition-shadow">
                       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-                        {/* School logo (contained, bigger, responsive) */}
+                        {/* bu logo */}
                         <div className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-2xl bg-white border border-blue-100 overflow-hidden grid place-items-center p-3">
                           <img
                             src={buSymbol}
@@ -341,7 +336,6 @@ const PersonalWebsite = () => {
                             <span className="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-white-700 border border-blue-200">
                               Boston, MA
                             </span>
-                            {/* Update your dates here if needed */}
                             <span className="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-white-700 border border-blue-200">
                               2025
                             </span>
@@ -543,7 +537,7 @@ const PersonalWebsite = () => {
                 Personal
               </h1> */}
               
-              {/* Outside of Code Section */}
+              {/* Outside of Code - About Me  */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8 mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Outside of Code</h2>
                 
@@ -565,10 +559,7 @@ const PersonalWebsite = () => {
                         className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                       />
 
-                      {/* Dark overlay appears on hover */}
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                      {/* Text slides in on hover */}
                       <div className="absolute inset-0 p-5 flex items-end text-white">
                         <p className="opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm leading-relaxed">
                           I played tennis for over 16 years, competing in national and international tournaments.
@@ -746,7 +737,7 @@ const PersonalWebsite = () => {
                       className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
                       onMouseEnter={() => setHoveredPhoto(photo.id)}
                       onMouseLeave={() => setHoveredPhoto(null)}
-                      onClick={() => setLightboxPhoto(photo)}  // NEW: open lightbox on click
+                      onClick={() => setLightboxPhoto(photo)}  
                     >
                       <div className="aspect-w-4 aspect-h-3 relative">
                         <img
@@ -859,13 +850,12 @@ const PersonalWebsite = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Global background image */}
+      {/* Global background picture. */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${siteBg})` }}
         />
-        {/* Soft overlay so text stays readable; tweak opacity/color to taste */}
         <div className="absolute inset-0 bg-white/10" />
         {/* or a blue tint: <div className="absolute inset-0 bg-blue-50/60" /> */}
       </div>
@@ -908,13 +898,11 @@ const PersonalWebsite = () => {
         <div className="relative z-10">
           {renderPage()}
 
-          {/* NEW: Lightbox modal (click-to-enlarge) */}
           {lightboxPhoto && (
             <div
               className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
               onClick={() => setLightboxPhoto(null)}
             >
-              {/* Let the image dictate width; keep caption attached */}
               <div
                 className="relative inline-flex flex-col bg-white rounded-2xl shadow-2xl overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
@@ -927,7 +915,6 @@ const PersonalWebsite = () => {
                   ×
                 </button>
 
-                {/* Key part: no fixed width; contain within viewport */}
                 <img
                   src={lightboxPhoto.url}
                   alt={lightboxPhoto.title}
