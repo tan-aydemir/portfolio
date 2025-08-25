@@ -112,15 +112,19 @@ const PersonalWebsite = () => {
                   {/* Right Side - Buttons */}
                   <div className="flex flex-col gap-6 items-center">
                   <button
-                    className="px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
+                    className="w-48 py-5 bg-gradient-to-r from-blue-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
                     onClick={() => goTo('Projects')}
                   >
                     Explore My Work
                   </button>
-                    <button className="px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-gray-200 hover:border-blue-300 text-lg"
-                      onClick={()=> window.location.href = 'mailto:taydemir@bu.edu?subject='}>
-                      Contact Me
-                    </button>
+
+                  <button
+                    className="w-48 py-5 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-gray-200 hover:border-blue-300 text-lg"
+                    onClick={() => (window.location.href = 'mailto:taydemir@bu.edu?subject=')}
+                  >
+                    Contact Me
+                  </button>
+
                   </div>
                 </div>
               </div>
@@ -137,44 +141,72 @@ const PersonalWebsite = () => {
                 
                 {/* Skills/Interests Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                  <div className="text-center p-6 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-white text-2xl">💻</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Software</h3>
-                    <p className="text-gray-600">Building efficient tools and applications</p>
+
+                    {/* Wrapper for overlay hover effect */}
+                    <div className="relative rounded-xl overflow-hidden border border-black-700 cursor-pointer">
+                      {/* Default visible text */}
+                      <p className="text-gray-600 p-4">Building tools that work</p>
+
+                      {/* Overlay appears on hover */}
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p className="text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed text-center">
+                          Python, Java, SQL, JavaScript (React), Go, GitHub, Docker
+                        </p>
+                      </div>
+
+                    </div>
                   </div>
                   
-                  <div className="text-center p-6 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  {/* Data  */}
+                  <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-white text-2xl">📊</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Data</h3>
-                    <p className="text-gray-600">Analyzing data to uncover insights</p>
+
+                    {/* Wrapper for overlay hover effect */}
+                    <div className="relative rounded-xl overflow-hidden border border-black-700 cursor-pointer">
+                      {/* Default visible text */}
+                      <p className="text-gray-600 p-4">Using data to uncover insights</p>
+
+                      {/* Overlay appears on hover */}
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed">
+                          Python, Pandas, NumPy, scikit-learn, SQL, Power BI
+                        </p>
+                      </div>
+                    </div>
                   </div>
+
                   
-                  <div className="text-center p-6 bg-gradient-to-br from-green-100 to-teal-100 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-white text-2xl">💰</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Finance</h3>
-                    <p className="text-gray-600">Understanding financial systems and markets</p>
+
+                    {/* Wrapper for overlay hover effect */}
+                    <div className="relative rounded-xl overflow-hidden border border-black-700 cursor-pointer">
+                      {/* Default visible text */}
+                      <p className="text-gray-600 p-4">Analyzing financial markets</p>
+
+                      {/* Overlay appears on hover */}
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed">
+                        Financial Modeling, Risk Analysis, Option Pricing, Portfolio Optimization
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Education Highlight */}
-              <div className="mt-12 bg-gradient-to-r from-red-100 to-orange-100 rounded-2xl p-8 text-center">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white text-2xl">🎓</span>
-                  </div>
-                  <div className="text-left">
-                    <h3 className="text-2xl font-bold text-gray-800">Boston University</h3>
-                    <p className="text-gray-600">Computer Science & Business Administration</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         );
@@ -311,7 +343,7 @@ const PersonalWebsite = () => {
                             </span>
                             {/* Update your dates here if needed */}
                             <span className="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-white-700 border border-blue-200">
-                              2021
+                              2025
                             </span>
                           </div>
           
@@ -374,9 +406,26 @@ const PersonalWebsite = () => {
                   {/* Projects Grid */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
                     
+                  {/* Personal Website */}
+                    <div 
+                      className="group p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300"
+                      onClick={() => window.open('https://github.com/tan-aydemir/portfolio', '_blank')}
+                    >
+                      <div className="flex items-center mb-4">
+                        <span className="text-3xl mr-3"></span>
+                        <h3 className="text-xl font-bold text-gray-800">Portfolio</h3>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                      My responsive portfolio site, built with React and Tailwind CSS. Deployed and running on Vercel.
+                      </p>
+                      <div className="flex items-center text-blsue-600 group-hover:text-blue-800 transition-colors duration-300">
+                        <span className="text-sm font-semibold">View on GitHub →</span>
+                      </div>
+                    </div>
+
                     {/* Project 1 */}
                     <div 
-                      className="group p-6 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300"
+                      className="group p-6 bg-gradient-to-br from-blue-100 to-black-100 rounded-xl hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300"
                       onClick={() => window.open('https://github.com/tan-aydemir/dormquery-agent/tree/main', '_blank')}
                     >
                       <div className="flex items-center mb-4">
@@ -616,7 +665,7 @@ const PersonalWebsite = () => {
                         {/* Text slides in on hover */}
                         <div className="absolute inset-0 p-5 flex items-end text-white">
                           <p className="opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm leading-relaxed">
-                            I love exploring new places and cultures. My favorite destinations: 🇳🇴, 🇫🇮, 🇵🇷, and 🇬🇧. 
+                            I love exploring new places and cultures. My favorite destinations are 🇳🇴, 🇫🇮, 🇵🇷, and 🇬🇧. 
                           </p>
                         </div>
                       </div>
