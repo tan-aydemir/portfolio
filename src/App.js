@@ -142,9 +142,6 @@ const PersonalWebsite = () => {
                 {/* Skills/Interests */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
-                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white text-2xl">💻</span>
-                    </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Software</h3>
 
                     {/* Overlay effect */}
@@ -153,7 +150,7 @@ const PersonalWebsite = () => {
 
                       {/* Overlay appears on hover */}
                       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <p className="text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed text-center">
+                        <p className="text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-xs leading-relaxed text-center">
                           Python, Java, SQL, JavaScript (React), Go, GitHub, Docker
                         </p>
                       </div>
@@ -163,9 +160,7 @@ const PersonalWebsite = () => {
                   
                   {/* Data */}
                   <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
-                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white text-2xl">📊</span>
-                    </div>
+
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Data</h3>
 
                     {/* Overlay */}
@@ -175,7 +170,7 @@ const PersonalWebsite = () => {
 
                       {/* Overlay appears on hover */}
                       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed">
+                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-xs leading-relaxed">
                           Python, Pandas, NumPy, scikit-learn, SQL, Power BI
                         </p>
                       </div>
@@ -184,9 +179,6 @@ const PersonalWebsite = () => {
 
                   
                   <div className="group text-center p-6 bg-gradient-to-br from-blue-100 to-blue-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
-                    <div className="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white text-2xl">💰</span>
-                    </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Finance</h3>
 
                     {/* Wrapper for overlay hover effect */}
@@ -196,8 +188,8 @@ const PersonalWebsite = () => {
 
                       {/* Overlay appears on hover */}
                       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-sm leading-relaxed">
-                        Financial Modeling, Risk Analysis, Option Pricing, Portfolio Optimization
+                        <p className="text-white opacity-100 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 p-4 text-xs leading-relaxed">
+                        Financial Modeling, Risk Analysis, Portfolio Optimization
                         </p>
                       </div>
                     </div>
@@ -545,9 +537,9 @@ const PersonalWebsite = () => {
                   {/* Tennis */}
                   <div className="group p-6 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-white text-xl">🎾</span>
-                      </div>
+                      {/* <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-xl"></span>
+                      </div> */}
                       <h3 className="text-xl font-bold text-gray-800">Tennis</h3>
                     </div>
 
@@ -575,9 +567,9 @@ const PersonalWebsite = () => {
                   {/* Dogs */}
                   <div className="group p-6 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-white text-xl">🐕</span>
-                      </div>
+                      {/* <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-xl"></span>
+                      </div> */}
                       <h3 className="text-xl font-bold text-gray-800">Dogs</h3>
                     </div>
 
@@ -606,9 +598,9 @@ const PersonalWebsite = () => {
                   {/* Guitar */}
                     <div className="group p-6 bg-gradient-to-br from-purple-100 to-violet-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                       <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                          <span className="text-white text-xl">🎸</span>
-                        </div>
+                        {/* <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white text-xl"></span>
+                        </div> */}
                         <h3 className="text-xl font-bold text-gray-800">Guitar</h3>
                       </div>
 
@@ -636,9 +628,9 @@ const PersonalWebsite = () => {
                   {/* Traveling */}
                     <div className="group p-6 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                       <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-3">
-                          <span className="text-white text-xl">✈️</span>
-                        </div>
+                        {/* <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white text-xl"></span>
+                        </div> */}
                         <h3 className="text-xl font-bold text-gray-800">Traveling</h3>
                       </div>
 
@@ -666,9 +658,9 @@ const PersonalWebsite = () => {
                   {/* Music */}
                   <div className="group p-6 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-white text-xl">🎵</span>
-                      </div>
+                      {/* <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-xl"></span>
+                      </div> */}
                       <h3 className="text-xl font-bold text-gray-800">Music</h3>
                     </div>
 
@@ -694,9 +686,9 @@ const PersonalWebsite = () => {
                   {/* Photography */}
                   <div className="group p-6 bg-gradient-to-br from-rose-100 to-pink-100 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-white text-xl">📷</span>
-                      </div>
+                      {/* <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-xl"></span>
+                      </div> */}
                       <h3 className="text-xl font-bold text-gray-800">Photography</h3>
                     </div>
 
@@ -726,7 +718,6 @@ const PersonalWebsite = () => {
               {/* Photography Gallery */}
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
                 <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center flex items-center justify-center">
-                  <span className="mr-3 text-rose-600 text-4xl">📷</span>
                   Photography
                 </h2>
                 
